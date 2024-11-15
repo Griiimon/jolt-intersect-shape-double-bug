@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c27f8bq03atcl"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_v33t0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_iq860"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_v33t0")
+
+[node name="Body" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Body"]
+unique_name_in_owner = true
+shape = SubResource("BoxShape3D_iq860")
